@@ -4,6 +4,10 @@
 	font-family: 'Open Sans', sans-serif;
 }
 
+body {
+	overflow-x: hidden;
+}
+
 ul {
 	list-style: none;
 	margin: 0;
@@ -19,11 +23,26 @@ div img {
 	width: 100%;
 }
 
+.btn {
+	background-color: #122A57;
+	color: #fff;
+	text-align: center;
+	border-radius: 30px;
+	width: 220px;
+	display: block;
+	text-decoration: none;
+	height: 50px;
+	line-height: 50px;
+	margin: 10px 0;
+}
+
 .flex-container {
 	display: flex;
 	max-width: 992px;
 	margin: auto;
 	width: 100%;
+	min-width: 320px;
+	padding: 10px 15px;
 }
 
 header {
@@ -50,15 +69,20 @@ header .menu {
 	justify-content: space-between;
 }
 
-/* SEÇÃO DE APRESENTAÇÃO */
+/* ===== SEÇÃO DE APRESENTAÇÃO ===== */
 .apresentacao {
 	height: 100vh;
 	align-items: center;
 	justify-content: space-between;
 }
 
+.apresentacao img {
+	min-width: 550px;
+}
+
 .apresentacao .texto-apresentacao {
 	min-height: 200px;
+	width: 100%;
 }
 
 .texto-apresentacao h1 {
@@ -67,19 +91,8 @@ header .menu {
 	margin-bottom: 10px;
 }
 
-.texto-apresentacao a {
-	background-color: #122A57;
-	color: #fff;
-	text-align: center;
-	border-radius: 30px;
-	width: 220px;
-	display: block;
-	text-decoration: none;
-	height: 50px;
-	line-height: 50px;
-	margin: 10px 0;
-}
 
+/* ===== SEÇÃO QUEM SOMOS ===== */
 #quem-somos {
 	flex-direction: row-reverse;
 	align-items: center;
@@ -106,4 +119,145 @@ header .menu {
 	margin-bottom: 20px;
 	line-height: 25px;
 	width: 90%;
+}
+
+#quem-somos img {
+	min-width: 420px;
+}
+
+
+/* ===== SEÇÃO DE SERVIÇOS ===== */
+.container-externo {
+	background-color: #122A57;
+	width: 100%;
+}
+
+#servicos {
+	flex-direction: column;
+	padding: 100px 0 50px 0;
+}
+
+#servicos h2 {
+	color: #fff;
+	font-size: 32px;
+	margin-bottom: 20px;
+}
+
+.list-servicos {
+	display: flex;
+	justify-content: space-between;
+}
+
+.list-servicos .item-servico {
+	text-align: center;
+}
+
+.item-servico a{
+	width: 120px;
+	background-color: #fff;
+	border-radius: 30px;
+	height: 50px;
+	text-align: center;
+	margin-top: 20px;
+	line-height: 50px;
+	padding: 5px 10px;
+	color: #122A57;
+	font-size: 12px;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.item-servico p {
+	font-size: 18px;
+	font-weight: 700;
+	color: #fff;
+	margin-top: 20px;
+}
+
+.item-servico img {
+	width: 80%;
+	margin: auto;
+}
+
+
+/* ===== SEÇÃO DE PLANOS ===== */
+#planos {
+	flex-direction: column;
+	min-height: 100vh;
+	padding-top: 50px;
+}
+
+#planos h2 {
+	font-size: 32px;
+}
+
+.list-planos {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+}
+
+.item-plano {
+	flex: 1;
+	border: 5px solid #122A57;
+	margin-right: 20px;
+	padding: 10px;
+	max-width: 240px;
+}
+
+.item-plano .btn {
+	margin: auto;
+	margin-bottom: 20px;
+}
+
+.item-plano h3 {
+	font-size: 24px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.item-plano h3::after {
+	content: "";
+	background-color: #122A57;
+	width: 100%;
+	height: 3px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.item-plano ul {
+	padding: 10px 20px;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+}
+
+.item-plano ul li {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	margin-top: 10px;
+}
+
+.item-plano ul li::before {
+	content: "";
+	width: 10px;
+	height: 10px;
+	background-color: #122A57;
+	margin-right: 5px;
+}
+
+/* ===== SEÇÃO DO RODAPÉ ===== */
+footer {
+	background-color: #122A57;
+	height: 70px;
+	display: flex;
+	align-items: center;
+}
+
+footer .footer {
+	justify-content: space-between;
+	color: #fff;
 }
